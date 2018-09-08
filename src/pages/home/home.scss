@@ -1,0 +1,34 @@
+.rapi{
+	background : rgba(255,255,255,0.7);
+	padding-left : 10px;
+	border-radius : 10px;
+	text-align: justify;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+.home{
+    //background-image: url("../assets/imgs/testtt.jpg");
+    //background-color: color($colors, primary);
+    background: url(../assets/imgs/testtt.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: color($colors, dark);
+}
+
+.toolbar-title{
+    text-align: center;
+}
+
+.tembus{
+	background-color : rgba(255,255,255,0.3);
+}
+.center{
+     text-align:center;
+}
+.besar{
+	font-size: 20px;
+}
+.back{
+	background-color: transparent;
+}

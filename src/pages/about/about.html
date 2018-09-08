@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Pengetahuan
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list class="accordion-list">
+
+    <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
+
+      <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+        <ion-icon item-left name="arrow-forward" *ngIf="!item.open"></ion-icon>
+        <ion-icon item-left name="arrow-down" *ngIf="item.open"></ion-icon>
+          {{ item.name }}
+      </button>
+ 
+      <ion-list *ngIf="item.children && item.open" no-lines>
+
+        <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
+
+          <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>
+            <h2>{{ child.name }}</h2>
+			<div class="angular-with-newlines">
+            {{ child.information }}
+			</div>
+          </ion-item>
+ 
+        </ion-list-header>
+      </ion-list>
+      
+    </ion-list-header>
+  </ion-list>
+
+</ion-content>

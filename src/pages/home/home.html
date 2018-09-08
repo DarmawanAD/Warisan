@@ -1,0 +1,200 @@
+<ion-content>
+
+
+<ion-item-divider class="besar back">
+    Muwarrits
+    </ion-item-divider>
+
+    <ion-item>
+    <ion-label color="primary" type="number">Total Harta</ion-label>
+	<ion-input placeholder="Rp." [(ngModel)]="totformat" type="tel" clearInput (input)="totformat = format(totformat)"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Hutang</ion-label>
+	<ion-input placeholder="Rp." [(ngModel)]="hutformat" type="tel" clearInput (input)="hutformat = format(hutformat)"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" stacked>Wasiat</ion-label>
+	<ion-input placeholder="Rp." [(ngModel)]="wasformat" type="tel" clearInput (input)="wasformat = format(wasformat)"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Biaya Pengurusan Jenazah</ion-label>
+	<ion-input placeholder="Rp." [(ngModel)]="bpjformat" type="tel" clearInput (input)="bpjformat = format(bpjformat)"></ion-input>
+  </ion-item>
+
+  
+   <ion-item-divider class="besar back">
+      Ahli Waris Laki-laki
+   </ion-item-divider>
+   
+   
+  <ion-item>
+    <ion-label color="primary" stacked>Anak laki - laki</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlanaklkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Bapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlbapakview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Suami</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsuamiview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Cucu laki-laki dari anak laki-laki</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlcuculkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Kakek</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlkakekbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara laki-laki sekandung</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrlkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara laki-laki sebapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrlkbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara laki-laki seibu</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrlkibuview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Anak laki-laki dari saudara (keponakan) sekandung</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlkeponakanview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Anak laki-laki dari saudara (keponakan) sebapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlkeponakanbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara laki-laki bapak (paman) yang sekandung</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlpamanview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara laki-laki bapak (paman) yang sebapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlpamanbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Sepupu sekandung</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsepupuview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Sepupu sebapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsepupubpkview" type="number"></ion-input>
+  </ion-item>
+  
+  
+   <ion-item-divider class="besar back">
+      Ahli Waris Perempuan
+   </ion-item-divider>
+  
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Anak perempuan</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlanakprview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Cucu perempuan dari garis anak laki-laki</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlcucuprview" type="number"></ion-input>
+  </ion-item>
+  
+<ion-item>
+    <ion-label color="primary" stacked>Ibu</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlibuview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Istri</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlistriview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara perempuan sekandung</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrprview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Nenek dari garis ibu</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlnenekibuview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Nenek dari garis bapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlnenekbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara perempuan sebapak</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrprbpkview" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary" stacked>Saudara perempuan seibu</ion-label>
+    <ion-input placeholder="0" [(ngModel)]="jmlsdrpribuview" type="number"></ion-input>
+  </ion-item>
+  
+  
+  <ion-grid>
+  <ion-row>
+  <button ion-button (click)="hitung()" icon-start  ion-button block ion button large  color ="tembus">
+  <ion-icon name="calculator"></ion-icon>
+  Hitung
+  </button>
+  </ion-row>
+  </ion-grid>
+  
+  <ion-content padding>
+	<div class="rapi">
+		<p text-center class="besar">HASIL</p>
+		<p text-wrap>Total harta : Rp. {{tot}},-</p>
+		<p text-wrap>Hutang : Rp. {{hut}},-</p>
+		<p text-wrap>Wasiat : Rp. {{was}},-</p>
+		<p text-wrap>Biaya pengurusan jenazah : Rp. {{bpj}},-</p>
+		<p text-wrap>----------------------------------------------</p>
+		<p text-wrap>Total harta siap dibagi  : Rp. {{sisawarisan}},-</p>
+		<p text-wrap>----------------------------------------------</p>
+		<p text-wrap>Bagian anak perempuan  : Rp. {{baganakpr}},-</p>
+		<p text-wrap>Bagian cucu perempuan  : Rp. {{bagcucupr}},-</p>
+		<p text-wrap>Bagian suami  : Rp. {{bagsuami}},-</p>
+		<p text-wrap>Bagian istri  : Rp. {{bagistri}},-</p>
+		<p text-wrap>Bagian bapak  : Rp. {{bagbapak}},-</p>
+		<p text-wrap>Bagian kakek  : Rp. {{bagkakekbapak}},-</p>
+		<p text-wrap>Bagian ibu  : Rp. {{bagibu}},-</p>
+		<p text-wrap>Bagian saudara perempuan kandung  : Rp. {{bagsdrpr}},-</p>
+		<p text-wrap>Bagian saudara perempuan sebapak  : Rp. {{bagsdrprbapak}},-</p>
+		<p text-wrap>Bagian saudara seibu laki-laki  : Rp. {{bagsdrlkibu}},-</p>
+		<p text-wrap>Bagian saudara seibu perempuan  : Rp. {{bagsdrpribu}},-</p>
+		<p text-wrap>Bagian nenek dari ibu  : Rp. {{bagnenekibu}},-</p>
+		<p text-wrap>Bagian nenek dari bapak  : Rp. {{bagnenekbapak}},-</p>
+		<p text-wrap>Bagian anak laki-laki : Rp. {{baganaklk}},-</p>
+		<p text-wrap>Bagian cucu laki-laki  : Rp. {{bagcuculk}},-</p>
+		<p text-wrap>Bagian saudara laki-laki  : Rp. {{bagsdrlk}},-</p>
+		<p text-wrap>Bagian saudara laki-laki dari bapak  : Rp. {{bagsdrlkbapak}},-</p>
+		<p text-wrap>Bagian keponakan  : Rp. {{bagkeponakan}},-</p>
+		<p text-wrap>Bagian keponakan dari bapak  : Rp. {{bagkeponakanbapak}},-</p>
+		<p text-wrap>Bagian paman  : Rp. {{bagpaman}},-</p>
+		<p text-wrap>Bagian paman bapak  : Rp. {{bagpamanbpk}},-</p>
+		<p text-wrap>Bagian sepupu  : Rp. {{bagsepupu}},-</p>
+		<p text-wrap>Bagian sepupu dari bapak  : Rp. {{bagsepupubapak}},-</p>
+    </div>
+  </ion-content>
+  
+</ion-content>
